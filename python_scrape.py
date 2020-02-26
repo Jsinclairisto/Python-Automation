@@ -9,6 +9,7 @@ import shutil
 import sqlite3
 import requests
 
+import pandas as pd
 
 
 # humboldt_site = pd.read_html('https://www.humboldt.edu/events/featured#/?i=6')
@@ -16,22 +17,32 @@ import requests
 
 def get_event_info():
 	
-	calender_page = requests.get("https://www.humboldt.edu/events/featured#/?i=6").text
+	calender_page = requests.get("https://dining.humboldt.edu/j-menu").text
 
 	soup = BeautifulSoup(calender_page, 'html.parser')
 
-	soup.prettify()
+	#soup.prettify()
 
+	menudivs = soup.find_all("div", {"class": "field-content"})
+
+	thefood = soup.find_all("div", {"class": "food-menu-dropdown"})
 	
-	
+	#print(menudivs.find_all('p'))
+
+	for fooditem in menudivs:
+		content = fooditem.p.{"class": ""}.text.strip()
+		
+
+		print(content)
+
+	# for food_items in menudivs:
+
 	# table = soup.find('tbody')
 	# rows = table.find_all('tr')
 
 	
 
 # 	# TODO: Print events in rows
-	
-
 
 def db_thingy():
     return "this is db_thingy"
