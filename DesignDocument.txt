@@ -1,0 +1,4 @@
+My initial intention for this project was to scrape the HSU site for upcoming events. I later switched to scraping the J menu instead
+as the html for the J was better written. The biggest challenge I had had less to do with printing the actual content, and more to
+do with printing it the way I wanted it to. I have never used beautiful soup in the past before, so it was a bit of a learning experience
+for me. I managed to print the menu contents, but unfortunately I could not figure out how to print the contents where they are supposed to be.
