@@ -4,3 +4,4 @@ do with printing it the way I wanted it to. I have never used beautiful soup in 
 for me. I managed to print the menu contents, but unfortunately I could not figure out how to print the contents where they are supposed to be. If I were to do this assignment again, I would make sure to start it earlier than I did. That way, if I were to
 get stuck on an issue, I would be less stressed and have a better approach to the problem. 
 EDIT: I decided to do an email bot very last minute. Essential, the email bot goes down a csv, checks to see which rows have a false value, and if they have the false value, it sends a message template to the email.
+To see how it works, click "email_automation.gif" in my repository.
