@@ -1,0 +1,3 @@
+In this assignment, I decided to take the test-score data, and compare average scores between the PRE category, and the POST category.
+Matplotlib has functions that make it easier for visual plotting. This is good as it compares who took the exams before and after,
+and how they compare. Did they do better on average, or worse?
